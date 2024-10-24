@@ -3,15 +3,15 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #f0f4f8; /* Softer background color */
     color: #333;
 }
 
 nav {
-    background-color: #007BFF;
+    background-color: #0056b3; /* Darker shade of blue */
     color: white;
-    padding: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 15px 30px; /* Increased padding */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
@@ -21,22 +21,24 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 25px; /* Slightly more space between items */
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition */
 }
 
 nav ul li a:hover {
     text-decoration: underline;
+    color: #ffcc00; /* Highlight color on hover */
 }
 
 .banner {
-    height: 350px;
-    background-image: url('your-banner-image.jpg'); /* Ganti dengan URL gambar banner */
+    height: 400px; /* Increased height for better impact */
+    background-image: url('your-banner-image.jpg'); /* Change to your image */
     background-size: cover;
     background-position: center;
     color: white;
@@ -49,52 +51,32 @@ nav ul li a:hover {
 }
 
 .banner h1 {
-    font-size: 2.5rem;
+    font-size: 3rem; /* Increased font size */
     margin: 0;
 }
 
 .banner p {
-    font-size: 1.2rem;
+    font-size: 1.5rem; /* Larger font size */
     margin: 10px 0 0;
 }
 
-.about, .projects, .contact {
+.about, .contact {
     padding: 40px;
-    margin: 20px;
+    margin: 20px auto;
+    max-width: 800px; /* Centered and limited width */
     background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.about h2, .projects h2, .contact h2 {
-    color: #007BFF;
-}
-
-.project-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.project-item {
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 5px;
-    width: 30%;
-    text-align: center;
-    margin: 10px 0;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.project-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2);
+.about h2, .contact h2 {
+    color: #0056b3; /* Consistent heading color */
+    border-bottom: 2px solid #0056b3; /* Underline for emphasis */
+    padding-bottom: 10px;
 }
 
 .contact {
-    background-color: #f9f9f9;
-    padding: 30px;
-    border-radius: 5px;
+    background-color: #f9f9f9; /* Light background for contact section */
 }
 
 .contact form {
@@ -104,29 +86,31 @@ nav ul li a:hover {
 
 .contact input, .contact textarea {
     margin: 10px 0;
-    padding: 10px;
+    padding: 15px; /* Increased padding for inputs */
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1rem; /* Larger font size */
 }
 
 .contact button {
-    padding: 10px;
-    background-color: #007BFF;
+    padding: 15px; /* Increased padding */
+    background-color: #007BFF; /* Primary button color */
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px; /* Rounded button */
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
 }
 
 .contact button:hover {
     background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift effect */
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #007BFF;
+    background-color: #0056b3;
     color: white;
     position: relative;
     bottom: 0;
@@ -137,18 +121,14 @@ footer {
     nav ul li {
         display: block;
         margin-bottom: 10px;
-    }
-
-    .project-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project-item {
-        width: 90%;
+        text-align: center; /* Centered text on small screens */
     }
 
     .banner h1 {
-        font-size: 2rem;
+        font-size: 2.5rem; /* Responsive font size */
+    }
+
+    .about, .contact {
+        margin: 10px; /* Adjust margins for smaller screens */
     }
 }
