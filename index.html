@@ -1,9 +1,63 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title></title>
-    </head>
-    <body>
-        
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="banner">
+            <h1 id="welcome">Welcome to My Portfolio</h1>
+            <p>Discover my work and projects.</p>
+        </div>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Hi! I am Farel a passionate web developer with experience in creating dynamic and responsive websites. Check out my projects below!</p>
+    </section>
+
+    <section class="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <!-- <h3>Project One</h3>
+                <p>A brief description of the project.</p>
+            </div>
+            <div class="project-item">
+                <h3>Project Two</h3>
+                <p>A brief description of the project.</p>
+            </div>
+            <div class="project-item">
+                <h3>Project Three</h3>
+                <p>A brief description of the project.</p>
+            </div>
+        </div> -->
+    </section>
+
+    <section class="contact">
+        <h2>Message Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div id="formOutput"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Farel Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
 </html>
