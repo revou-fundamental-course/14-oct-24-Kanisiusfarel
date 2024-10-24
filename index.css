@@ -3,15 +3,15 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #f0f4f8; /* Softer background color */
-    color: #333;
+    background-color: #0c1a30; /* Darker background color */
+    color: #e0e0e0; /* Lighter text color for contrast */
 }
 
 nav {
     background-color: #0056b3; /* Darker shade of blue */
     color: white;
     padding: 15px 30px; /* Increased padding */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 nav ul {
@@ -25,7 +25,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #e0e0e0; /* Light text color */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s; /* Smooth color transition */
@@ -64,19 +64,19 @@ nav ul li a:hover {
     padding: 40px;
     margin: 20px auto;
     max-width: 800px; /* Centered and limited width */
-    background-color: white;
+    background-color: #1a2a4b; /* Darker background for sections */
     border-radius: 12px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 .about h2, .contact h2 {
-    color: #0056b3; /* Consistent heading color */
-    border-bottom: 2px solid #0056b3; /* Underline for emphasis */
+    color: #ffcc00; /* Highlight heading color */
+    border-bottom: 2px solid #ffcc00; /* Underline for emphasis */
     padding-bottom: 10px;
 }
 
 .contact {
-    background-color: #f9f9f9; /* Light background for contact section */
+    background-color: #1a2a4b; /* Darker background for contact section */
 }
 
 .contact form {
@@ -87,9 +87,11 @@ nav ul li a:hover {
 .contact input, .contact textarea {
     margin: 10px 0;
     padding: 15px; /* Increased padding for inputs */
-    border: 1px solid #ddd;
+    border: 1px solid #333;
     border-radius: 8px; /* Rounded corners */
     font-size: 1rem; /* Larger font size */
+    background-color: #0c1a30; /* Dark input background */
+    color: #e0e0e0; /* Light input text */
 }
 
 .contact button {
@@ -110,7 +112,7 @@ nav ul li a:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #0056b3;
+    background-color: #0056b3; /* Consistent footer color */
     color: white;
     position: relative;
     bottom: 0;
